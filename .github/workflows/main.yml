@@ -13,9 +13,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '18.12.1'
+      - run: npm ls --depth=0
       - name: Install Dependencies
-        working-directory: app
         run: npm install
       - name: Run test
-        working-directory: app
         run: npm test
