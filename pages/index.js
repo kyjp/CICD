@@ -5,8 +5,7 @@ export default function Home() {
   return (
     <>
       <main>
-        test
-
+        <p>test</p>
       </main>
     </>
   )
