@@ -14,8 +14,8 @@ jobs:
         with:
           node-version: '18.12.1'
       - name: Install Dependencies
-        working-directory: ./app/
+        working-directory: /app
         run: npm install
       - name: Run test
-        working-directory: ./app/
+        working-directory: /app
         run: npm test
