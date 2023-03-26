@@ -6,14 +6,13 @@ on:
       - master
 jobs:
   build:
-   runs-on: ubuntu-ubuntu-latest
-
-  steps:
-    - name: Setup NodeJs
-      uses: actions/setup-node@v1
-      with:
-        node-version: '18.12.1'
-    - name: Install Dependencies
-      run: npm install
-    - name: Run test
-      run: npm test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup NodeJs
+        uses: actions/setup-node@v1
+        with:
+          node-version: '18.12.1'
+      - name: Install Dependencies
+        run: npm install
+      - name: Run test
+        run: npm test
